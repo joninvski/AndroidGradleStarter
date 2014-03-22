@@ -28,9 +28,10 @@ public class SampleAppInstrumentTest extends ActivityInstrumentationTestCase2<Fi
         solo.enterText((EditText) solo.getView(R.id.etResult), fieldValue);
 
         Spoon.screenshot(getActivity(), "before_button_clicked");
+
         // find button and click it
-        solo.clickOnButton("Launch");
-        // or solo.clickOnView(solo.getView(R.id.btnLaunch));
+        // solo.clickOnButton("Launch");
+        solo.clickOnView(solo.getView(R.id.btnLaunch));
 
         // Wait 2 seconds for the start of the activity
         solo.waitForActivity(SecondActivity.class, 2000);
