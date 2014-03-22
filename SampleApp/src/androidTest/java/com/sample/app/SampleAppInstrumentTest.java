@@ -4,7 +4,7 @@ import android.test.ActivityInstrumentationTestCase2;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.jayway.android.robotium.solo.Solo;
+import com.robotium.solo.Solo;
 import com.squareup.spoon.Spoon;
 
 public class SampleAppInstrumentTest extends ActivityInstrumentationTestCase2<FirstActivity> {
